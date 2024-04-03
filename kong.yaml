@@ -1,0 +1,17 @@
+_format_version: "2.1"
+_transform: true
+
+services:
+- name: gateway
+  host: envoyegress
+  protocol: grpc
+  port: 25685
+  routes:
+    - name: root
+      hosts:
+        - kong
+      protocols:
+        - grpc
+        - grpcs
+      paths:
+        - /

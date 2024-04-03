@@ -18,7 +18,7 @@ static_resources:
                 "@type": type.googleapis.com/envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager
                 stat_prefix: hcm
                 codec_type: auto
-                stream_idle_timeout: 599s
+                stream_idle_timeout: 0s
                 http2_protocol_options:
                   connection_keepalive:
                     interval: 10s
