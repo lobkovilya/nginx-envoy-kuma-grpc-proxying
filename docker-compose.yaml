@@ -84,8 +84,3 @@ services:
       - "9902:9901"
     volumes:
       - ./envoy_ingress.yaml:/etc/envoy/envoy.yaml
-  # statsd:
-  #   image: statsd/statsd:latest
-  #   platform: linux/x86_64
-  #   ports:
-  #     - "8125:8125"
