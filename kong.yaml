@@ -15,3 +15,9 @@ services:
         - grpcs
       paths:
         - /
+
+plugins:
+- name: prometheus
+  config:
+    per_consumer: false
+
